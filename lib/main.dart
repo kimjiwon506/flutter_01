@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+// import 'package:flutter_01/pages/home.dart';
+import 'package:flutter_01/pages/login.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 void main() {
@@ -10,22 +12,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(fontFamily: GoogleFonts.poppins().fontFamily),
-      home: MyHomePage(),
-    );
-  }
-}
-
-class MyHomePage extends StatelessWidget {
-  const MyHomePage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('test'),
-      ),
-      body: Center(child: Text('test')),
+      title: 'flutter',
+      theme: ThemeData(textTheme: GoogleFonts.openSansTextTheme()),
+      home: Login(),
     );
   }
 }
