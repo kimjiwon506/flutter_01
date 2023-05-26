@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-// import 'package:flutter_01/pages/home.dart';
-import 'package:flutter_01/pages/login.dart';
+import 'package:flutter_01/screens/weather.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 void main() {
@@ -14,7 +13,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'flutter',
       theme: ThemeData(textTheme: GoogleFonts.openSansTextTheme()),
-      home: Login(),
+      home: WeatherPage(),
     );
   }
 }
